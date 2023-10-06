@@ -8,7 +8,7 @@ WORKDIR /app
 COPY tiny.c /app/
 
 # Compile the C program
-RUN gcc -o tiny tiny.c
+RUN gcc -Os -o tiny tiny.c
 
 # Run the compiled program
 CMD ["./tiny"]
